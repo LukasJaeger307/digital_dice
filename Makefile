@@ -51,5 +51,5 @@ documentation : $(DOCDIR) $(SOURCES) $(INCLUDES)
 	doxygen Doxyfile
 
 git : 
-	git add include/*.h src/*.c Makefile .gitignore Doxyfile
+	git add COPYING include/*.h src/*.c Makefile .gitignore Doxyfile
 	git status
