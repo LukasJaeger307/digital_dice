@@ -34,8 +34,8 @@ $(DOCDIR):
 					
 folders : $(BINDIR) $(OBJDIR)
 							
-#install : $(BINDIR)/$(P)
-#	avrdude -C/usr/share/arduino/hardware/tools/avrdude.conf -v -v -v -v -patmega328p -carduino -P/dev/ttyACM0 -b115200 -D -Uflash:w:$(BINDIR)/$(P).hex:i
+install : $(BINDIR)/$(P)
+	mspdebug rf2500 "prog $(BINDIR)/$(P)"
 								
 clean : $(BINDIR)/$(P) $(FOLDERS)
 	rm -f $(OBJDIR)/*.o $(BINDIR)/*.hex $(BINDIR)/*.elf
@@ -43,10 +43,6 @@ clean : $(BINDIR)/$(P) $(FOLDERS)
 	rm -rf $(OBJDIR)
 	rm -rf $(DOCDIR)
 													
-serial : $(BINDIR)/$(P)
-	screen /dev/ttyACM0 115200 
-								
-												
 documentation : $(DOCDIR) $(SOURCES) $(INCLUDES)
 	doxygen Doxyfile
 
