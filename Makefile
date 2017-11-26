@@ -39,7 +39,6 @@ install : $(BINDIR)/$(P)
 								
 clean : $(BINDIR)/$(P) $(FOLDERS)
 	rm -f $(OBJDIR)/*.o $(BINDIR)/*.hex $(BINDIR)/*.elf
-	rm -rf $(BINDIR)
 	rm -rf $(OBJDIR)
 	rm -rf $(DOCDIR)
 													
