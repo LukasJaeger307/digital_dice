@@ -27,7 +27,7 @@ sudo apt install gcc-msp430 binutils-msp430 mspdebug make git doxygen
 ```
 
 If you don't use a Debian-based linux, I can't guarantee that you find all that software in your
-repositories. I think provides that stuff in its Build Service. But that's all I can
+repositories. I think [opensuse](https://www.opensuse.org) provides that stuff in its Build Service. But that's all I can
 tell you. But as a Linux user you are still smart and handsome.
 If you use Windows or MacOS, please install Linux first and then follow the above steps. 
 This will dramatically increase your smart- and handsomeness and will make the following steps way easier.
