@@ -40,8 +40,8 @@
  * start printing digits:
  *
  * ```c
- * P2OUT |= BIT0 | BIT1 | BIT2 | BIT3 | BIT4 | BIT5;
- * P1OUT |= BIT6 | BIT7;
+ * P2DIR |= BIT0 | BIT1 | BIT2 | BIT3 | BIT4 | BIT5;
+ * P1DIR |= BIT6 | BIT7;
  * ```
  *
  * Now you can write the numbers on the display using \ref write_num. It
